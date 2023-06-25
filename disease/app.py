@@ -11,9 +11,13 @@ from streamlit_option_menu import option_menu
 #parkinsons_model = pickle.load(open('parkinsons_model.sav','rb'))
 
 
-diabetes_model = pickle.load(open('C:/Users/HP/OneDrive/Desktop/disease/diabetes_model.sav', 'rb'))
-heart_disease_model = pickle.load(open('C:/Users/HP/OneDrive/Desktop/disease/heart_disease_model.sav','rb'))
-parkinsons_model = pickle.load(open('C:/Users/HP/OneDrive/Desktop/disease/parkinsons_model.sav','rb'))
+#diabetes_model = pickle.load(open('C:/Users/HP/OneDrive/Desktop/disease/diabetes_model.sav', 'rb'))
+#heart_disease_model = pickle.load(open('C:/Users/HP/OneDrive/Desktop/disease/heart_disease_model.sav','rb'))
+#parkinsons_model = pickle.load(open('C:/Users/HP/OneDrive/Desktop/disease/parkinsons_model.sav','rb'))
+diabetes_model = pd.read_csv('diabetes_model.csv')
+heart_disease_model =pd.read_csv('heart_disease_model.csv')
+parkinsons_model =pd.read_csv('parkinsons_model.csv')
+
 
 # sidebar for navigation
 with st.sidebar:
