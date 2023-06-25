@@ -1,13 +1,18 @@
 import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
+import pandas as pd
 
 
 # loading the saved models
 
-diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
-heart_disease_model = pickle.load(open('heart_disease_model.sav','rb'))
-parkinsons_model = pickle.load(open('parkinsons_model.sav','rb'))
+#diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
+#heart_disease_model = pickle.load(open('heart_disease_model.sav','rb'))
+#parkinsons_model = pickle.load(open('parkinsons_model.sav','rb'))
+
+diabetes_model = pd.read_csv('diabetes_model.sav')
+heart_disease_model =pd.read_csv('heart_disease_model.sav')
+parkinsons_model = pd.read_csv('parkinsons_model.sav')
 
 # sidebar for navigation
 with st.sidebar:
