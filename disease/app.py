@@ -15,7 +15,7 @@ import pandas as pd
 #diabetes_model = pickle.load(open('C:/Users/HP/OneDrive/Desktop/disease/diabetes_model.sav', 'rb'))
 #heart_disease_model = pickle.load(open('C:/Users/HP/OneDrive/Desktop/disease/heart_disease_model.sav','rb'))
 #parkinsons_model = pickle.load(open('C:/Users/HP/OneDrive/Desktop/disease/parkinsons_model.sav','rb'))
-diabetes_model = pd.read_csv(open('diabetes_model.csv','rb'))
+diabetes_model = pd.read_csv(open('C:/Users/HP/OneDrive/Desktop/disease/diabetes_model.csv','rb'))
 
 heart_disease_model =pd.read_csv(open('heart_disease_model.csv','rb'))
 parkinsons_model =pd.read_csv(open('parkinsons_model.csv','rb'))
